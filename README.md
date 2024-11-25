@@ -7,7 +7,7 @@ This is the development repository for the **STMicroelectronics STM32WL Series D
 This DFP uses the generator integration of the [CMSIS-Toolbox to Configure STM32 Devices with CubeMX](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md) that is also supported in µVision 5.40 an higher.
 
 ## Repository top-level structure
-stm32
+
 Directory                   | Description
 :---------------------------|:--------------
 [.github/workflows](https://github.com/Open-CMSIS-Pack/STM32WLxx_DFP/tree/main/.github/workflows)  | [GitHub Actions](#github-actions) for creating the software pack.
