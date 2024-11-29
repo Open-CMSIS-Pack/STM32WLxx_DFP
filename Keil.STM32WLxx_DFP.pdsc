@@ -13,20 +13,8 @@
   </licenseSets>
 
   <releases>
-    <release version="2.0.0-dev">
-      Updated for new CMSIS-Toolbox CubeMX integration
-      Removed STM32CubeMX_FW_WL
-      Updated SVD files
-      Removed previous generator (gpdsc)
-      Added new global generator
-      Package Description (pdsc):
-      - Removed Device:Startup component
-      - Removed Device:STM32Cube HAL components
-      - Removed Device:STM32Cube LL components
-      - Removed compile device header from device description
-      - Removed unused conditions
-      - Replaced documentation files with permalinks
-      - Added LICENSE file
+    <release version="0.0.0">
+      Active development..
     </release>
     <release version="1.2.0" date="2024-02-02">
       Updated Pack to STM32Cube_FW_WL Firmware Package version V1.3.0 (using HAL Drivers V1.3.0).
@@ -417,6 +405,7 @@
     <condition id="STM32WL">
       <description>STMicroelectronics STM32WL devices</description>
       <require Dvendor="STMicroelectronics:13" Dname="STM32WL*"/>
+      <deny    Dvendor="STMicroelectronics:13" Dname="STM32WL3*"/>
     </condition>
 
     <!-- Device + CMSIS Conditions -->
