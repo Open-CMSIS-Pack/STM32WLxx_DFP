@@ -8,12 +8,12 @@
   <license>LICENSE</license>
   <licenseSets>
     <licenseSet id="all" default="true" gating="true">
-      <license name="LICENSE" title="Apache 2.0 open-source license" spdx="Apache-2.0"/>
+      <license title="Apache-2.0 License for CMSIS add-ons"                  name="LICENSE"   spdx="Apache-2.0"/>
     </licenseSet>
   </licenseSets>
 
   <releases>
-    <release version="0.0.0">
+    <release version="2.0.2-dev">
       Active development..
     </release>
     <release version="1.2.0" date="2024-02-02">
@@ -398,6 +398,7 @@
       </subFamily>
 
     </family>
+
   </devices>
 
   <conditions>
@@ -441,5 +442,4 @@
       <description>Create a CubeMX Dual Core solution with CM4 and CM0PLUS projects</description>
     </template>
   </csolution>
-
 </package>
