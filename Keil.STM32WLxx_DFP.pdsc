@@ -20,6 +20,9 @@
       Updated Templates:
       - Added DWARF-5 debug information
       - Added generated output files
+      Package Description (pdsc):
+      - Shortened device family description
+      - Added Ddsp processor attribute
     </release>
     <release version="1.2.0" date="2024-02-02">
       Updated Pack to STM32Cube_FW_WL Firmware Package version V1.3.0 (using HAL Drivers V1.3.0).
@@ -64,8 +67,8 @@
 
       <!-- ************************  Subfamily 'STM32WL55 Dual Core'  **************************** -->
       <subFamily DsubFamily="STM32WL55">
-        <processor Pname="CM4"  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dmpu="MPU"    Dfpu="NO_FPU" Dendian="Little-endian" Dclock="48000000"/>
-        <processor Pname="CM0P" Dcore="Cortex-M0+" DcoreVersion="r0p1" Dmpu="NO_MPU" Dfpu="NO_FPU" Dendian="Little-endian" Dclock="48000000"/>
+        <processor Pname="CM4"  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dmpu="MPU"    Dfpu="NO_FPU" Ddsp="DSP"    Dendian="Little-endian" Dclock="48000000"/>
+        <processor Pname="CM0P" Dcore="Cortex-M0+" DcoreVersion="r0p1" Dmpu="NO_MPU" Dfpu="NO_FPU" Ddsp="NO_DSP" Dendian="Little-endian" Dclock="48000000"/>
         <debug Pname="CM4"  svd="CMSIS/SVD/STM32WL5x_CM4.svd"/>
         <debug Pname="CM0P" svd="CMSIS/SVD/STM32WL5x_CM0P.svd"/>
         <compile Pname="CM4"  define="STM32WL55xx" Pdefine="CORE_CM4"/>
@@ -77,32 +80,13 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf" title="STM32WL55xx STM32WL54xx Data Sheet"/>
 
         <description>
-          The STM32WL5xx is a Dual core (ARMCortex-M4 + ARM Cortex-M0+) microcontroller where the ARM Cortex-M0+ can be configured as a secure co-processor.
-          The dual core option enables Secure Firmware Install (SFI), secure Firmware Update(SFU), Secure Key Storage (SKS), and secure subGHz radio communication.
-          The main features:
-            - Multiprotocol LPWAN dual core 32-bit Arm Cortex-M4/M0+ MCUs LoRa,
-            -(G)FSK, (G)MSK, BPSK,
-            - up to 256KB Flash,
-            - 64 KB SRAM
+High-performance STM32WL MCUs with Arm Cortex-M4 and Arm Cortex-M0+ cores, MPU, DSP, ART Accelerator, 1.25 DMIPS at 48 MHz.
         </description>
         <description Pname="CM4">
-          The Cortex-M4 processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - simple, easy-to-use programmers model.
-            - highly efficient ultra-low power operation.
-            - excellent code density.
-            - deterministic, high-performance interrupt handling.
-            - upward compatibility with the rest of the Cortex-M processor family.
+The Cortex-M4 processor is an entry-level 32-bit Arm Cortex processor.
         </description>
         <description Pname="CM0P">
-          The Cortex-M0+ processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - A simple architecture that is easy to learn and program.
-            - Ultra-low power, energy-efficient operation.
-            - Excellent code density.
-            - Deterministic, high-performance interrupt handling.
-            - Upward compatibility with Cortex-M processor family.
-            - Platform security robustness, with optional integrated Memory Protection Unit (MPU).
+The Cortex-M0+ processor is an entry-level 32-bit Arm Cortex processor.
         </description>
 
         <!-- ################################### 256 KB ################################## -->
@@ -153,8 +137,8 @@
 
       <!-- ************************  Subfamily 'STM32WL54 Dual Core'  **************************** -->
       <subFamily DsubFamily="STM32WL54">
-        <processor Pname="CM4"  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dmpu="MPU"    Dfpu="NO_FPU" Dendian="Little-endian" Dclock="48000000"/>
-        <processor Pname="CM0P" Dcore="Cortex-M0+" DcoreVersion="r0p1" Dmpu="NO_MPU" Dfpu="NO_FPU" Dendian="Little-endian" Dclock="48000000"/>
+        <processor Pname="CM4"  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dmpu="MPU"    Dfpu="NO_FPU" Ddsp="DSP"    Dendian="Little-endian" Dclock="48000000"/>
+        <processor Pname="CM0P" Dcore="Cortex-M0+" DcoreVersion="r0p1" Dmpu="NO_MPU" Dfpu="NO_FPU" Ddsp="NO_DSP" Dendian="Little-endian" Dclock="48000000"/>
         <debug Pname="CM4"  svd="CMSIS/SVD/STM32WL5x_CM4.svd"/>
         <debug Pname="CM0P" svd="CMSIS/SVD/STM32WL5x_CM0P.svd"/>
         <compile Pname="CM4"  define="STM32WL54xx" Pdefine="CORE_CM4"/>
@@ -166,32 +150,13 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf" title="STM32WL55xx STM32WL54xx Data Sheet"/>
 
         <description>
-          The STM32WL5xx is a Dual core (ARMCortex-M4 + ARM Cortex-M0+) microcontroller where the ARM Cortex-M0+ can be configured as a secure co-processor.
-          The dual core option enables Secure Firmware Install (SFI), secure Firmware Update(SFU), Secure Key Storage (SKS), and secure subGHz radio communication.
-          The main features:
-            - Multiprotocol LPWAN dual core 32-bit Arm Cortex-M4/M0+ MCUs LoRa,
-            -(G)FSK, (G)MSK, BPSK,
-            - up to 256KB Flash,
-            - 64 KB SRAM
+High-performance STM32WL MCUs with Arm Cortex-M4 and Arm Cortex-M0+ cores, MPU, DSP, ART Accelerator, 1.25 DMIPS at 48 MHz.
         </description>
         <description Pname="CM4">
-          The Cortex-M4 processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - simple, easy-to-use programmers model.
-            - highly efficient ultra-low power operation.
-            - excellent code density.
-            - deterministic, high-performance interrupt handling.
-            - upward compatibility with the rest of the Cortex-M processor family.
+The Cortex-M4 processor is an entry-level 32-bit Arm Cortex processor.
         </description>
         <description Pname="CM0P">
-          The Cortex-M0+ processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - A simple architecture that is easy to learn and program.
-            - Ultra-low power, energy-efficient operation.
-            - Excellent code density.
-            - Deterministic, high-performance interrupt handling.
-            - Upward compatibility with Cortex-M processor family.
-            - Platform security robustness, with optional integrated Memory Protection Unit (MPU).
+The Cortex-M0+ processor is an entry-level 32-bit Arm Cortex processor.
         </description>
 
         <!-- ################################### 256 KB ################################## -->
@@ -220,7 +185,7 @@
 
       <!-- ************************  Subfamily 'STM32WLE5 Single Core'  ************************** -->
       <subFamily DsubFamily="STM32WLE5">
-        <processor  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dfpu="NO_FPU" Dmpu="MPU" Dendian="Little-endian" Dclock="48000000"/>
+        <processor  Dcore="Cortex-M4"  DcoreVersion="r0p1" Dfpu="NO_FPU" Dmpu="MPU" Ddsp="DSP" Dendian="Little-endian" Dclock="48000000"/>
         <debug svd="CMSIS/SVD/STM32WLE5_CM4.svd"/>
         <compile define="STM32WLE5xx"/>
 
@@ -229,14 +194,7 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32wle5c8.pdf" title="STM32WLE5xx STM32WLE4xx Data Sheet"/>
 
         <description >
-          The STM32WLE5xx dvices are based on ARM Cortex-M4 processor which is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          The Cortex-M4 processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - simple, easy-to-use programmers model
-            - highly efficient ultra-low power operation
-            - excellent code density
-            - deterministic, high-performance interrupt handling
-            - upward compatibility with the rest of the Cortex-M processor family.
+High-performance STM32WL MCUs with Arm Cortex-M4 core, MPU, DSP, ART Accelerator, 1.25 DMIPS at 48 MHz.
           </description>
 
         <!-- ################################### 256 KB ################################## -->
@@ -322,7 +280,7 @@
 
       <!-- ************************  Subfamily 'STM32WLE4 Single Core'  ************************** -->
       <subFamily DsubFamily="STM32WLE4">
-        <processor Dcore="Cortex-M4"  DcoreVersion="r0p1" Dfpu="NO_FPU" Dmpu="MPU" Dendian="Little-endian" Dclock="48000000"/>
+        <processor Dcore="Cortex-M4"  DcoreVersion="r0p1" Dfpu="NO_FPU" Dmpu="MPU" Ddsp="DSP" Dendian="Little-endian" Dclock="48000000"/>
         <debug svd="CMSIS/SVD/STM32WLE5_CM4.svd"/>
         <compile define="STM32WLE4xx"/>
 
@@ -331,14 +289,7 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32wle5c8.pdf" title="STM32WLE5xx STM32WLE4xx Data Sheet"/>
 
         <description >
-          The STM32WLE4xx dvices are based on ARM Cortex-M4 processor which is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          The Cortex-M4 processor is an entry-level 32-bit ARM Cortex processor designed for a broad range of embedded applications.
-          It offers significant benefits to developers, including:
-            - simple, easy-to-use programmers model.
-            - highly efficient ultra-low power operation.
-            - excellent code density.
-            - deterministic, high-performance interrupt handling.
-            - upward compatibility with the rest of the Cortex-M processor family.
+High-performance STM32WL MCUs with Arm Cortex-M4 core, MPU, DSP, ART Accelerator, 1.25 DMIPS at 48 MHz.
         </description>
 
         <!-- ################################### 256 KB ################################## -->
