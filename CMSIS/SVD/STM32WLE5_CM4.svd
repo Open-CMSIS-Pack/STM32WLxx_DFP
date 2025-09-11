@@ -18,14 +18,14 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32WLE5_CM4</name>
-   <version>1.5</version>
+   <version>1.6</version>
    <description>STM32WLE5_CM4</description>  
    <cpu>
     <name>CM4</name>
     <revision>r0p1</revision>
     <endian>little</endian>
     <mpuPresent>true</mpuPresent>
-    <fpuPresent>true</fpuPresent>
+    <fpuPresent>false</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
    </cpu>      
