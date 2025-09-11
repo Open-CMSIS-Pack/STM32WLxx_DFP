@@ -17,6 +17,9 @@
       Active development ...
       Updated SVD files
       Updated documentation references
+      Updated Templates:
+      - Added DWARF-5 debug information
+      - Added generated output files
     </release>
     <release version="1.2.0" date="2024-02-02">
       Updated Pack to STM32Cube_FW_WL Firmware Package version V1.3.0 (using HAL Drivers V1.3.0).
@@ -47,6 +50,7 @@
     </release>
   </releases>
 
+  <!-- keywords for indexing -->
   <keywords>
     <keyword>ST</keyword>
     <keyword>Device Support</keyword>
@@ -400,6 +404,7 @@
       </subFamily>
 
     </family>
+
   </devices>
 
   <conditions>
@@ -443,5 +448,4 @@
       <description>Create a CubeMX Dual Core solution with CM4 and CM0PLUS projects</description>
     </template>
   </csolution>
-
 </package>
