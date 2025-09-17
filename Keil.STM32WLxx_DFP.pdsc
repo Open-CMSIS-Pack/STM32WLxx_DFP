@@ -13,16 +13,8 @@
   </licenseSets>
 
   <releases>
-    <release version="2.0.2-dev">
+    <release version="2.1.1-dev">
       Active development ...
-      Updated SVD files
-      Updated documentation references
-      Updated Templates:
-      - Added DWARF-5 debug information
-      - Added generated output files
-      Package Description (pdsc):
-      - Shortened device family description
-      - Added Ddsp processor attribute
     </release>
     <release version="1.2.0" date="2024-02-02">
       Updated Pack to STM32Cube_FW_WL Firmware Package version V1.3.0 (using HAL Drivers V1.3.0).
